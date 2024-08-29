@@ -25,3 +25,18 @@ Criar arquivo .gitignore
 ir no site gitignore.io e colocar django
 o site vai trazer a lista de arquivos a serem ignorados em projetos django. Salvar então o arquivo .gitignore com esse conteúdo.
 
+4.
+python manage.py startapp galeria
+realizar o mapeamento das rotas nos arquivos urls.py
+
+5.
+criei uma pasta galeria (pois é o meu app) dentro da pasta templates e lá coloquei o index.html
+
+6.
+criar variáveis no settings.py para indicar o endereço dos arquivos estáticos
+criar dentro de setup/static as pastas com os arquivos estáticos
+depois python manage.py collectstatic
+depois {% load static %} na primeira linha do index.html
+e no html a referência para o css fica assim: <link rel="stylesheet" href="{% static '/styles/style.css' %}">
+fazer o mesmo para todos os arquivos estáticos existentes dentro do html
+
